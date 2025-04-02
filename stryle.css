@@ -1,0 +1,191 @@
+/* fallback */
+@font-face {
+    @font-face {
+        font-family: 'Vazir';
+        src: url('fonts/Vazir-Regular.woff2') format('woff2'),
+             url('fonts/Vazir-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazir', Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff5f5;
+}
+
+.resume-container {
+    height: 95%;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.header {
+    background-color: #37443f;
+    color: #fff5f5;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.header-content {
+    width: 70%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.header-name {
+    font-size: 1.8rem;
+    margin-bottom: 3px;
+}
+
+.header-title {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.profile-image {
+    width: 120px;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #37443f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.main-content {
+    display: flex;
+    height: 80%;
+}
+
+.left-column {
+    height: 100%;
+    width: 40%;
+    background-color: #e8e8e8;
+    padding: 20px;
+    color: #333;
+}
+
+.right-column {
+    height: 100%;
+    width: 59.5%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    color: #333;
+}
+
+.divider {
+    width: 0.5%;
+    background-color: #37443f;
+    margin-top: 4%;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    color: #37443f;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #37443f;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    margin-left: 10px;
+    color: #37443f;
+    font-size: 1.2rem;
+}
+
+.contact-text {
+    font-size: 0.9rem;
+}
+
+.education-item, .skill-item {
+    margin-bottom: 15px;
+}
+
+.education-title {
+    font-size: 1.1rem;
+    color: #37443f;
+    margin-bottom: 5px;
+}
+
+.education-detail {
+    font-size: 0.8rem;
+    margin-right: 25px;
+}
+
+.skills-container {
+    margin-top: 20px;
+}
+
+.skill-category {
+    font-size: 1rem;
+    color: #37443f;
+    margin: 10px 0 5px 0;
+}
+
+.skill-list {
+    font-size: 0.9rem;
+    margin-right: 25px;
+    line-height: 1.6;
+}
+@media (min-width: 1100px) { 
+       .resume-container {
+        width: 50%;
+        height: 95%;
+    }  
+    .divider {
+    width: 0.3%;
+}
+.right-column {
+    width: 59.7%;
+}
+
+
+}
+ @media (max-width: 1100px) { 
+    .left-column, .right-column {
+        width: 100%;
+    }
+} 
