@@ -5,7 +5,7 @@
 - تمرین انتشار پروژه‌های  با GitHub Pages.
 
 : نحوه اجرا
-- برای مشاهده رزومه، به آدرس [GitHub Pages](https://fafano.github.io/digital-resume1) مراجعه کنید.
+- برای مشاهده رزومه، به آدرس [GitHub Pages](https://fafano.github.io/digital-resume) مراجعه کنید.
 - برای توسعه محلی، کافی است فایل‌های `index.html` و `style.css` را ویرایش کنید.
 
 : فایل‌های پروژه
