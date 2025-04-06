@@ -1,0 +1,217 @@
+ /* fallback */
+@font-face {
+    font-family: 'Vazir';
+    src: url('fonts/Vazir-Regular.woff2') format('woff2'),
+         url('fonts/Vazir-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazir', Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff5f5;
+}
+
+.resume-container {
+    width: 95%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.header {
+    background-color: #37443f;
+    color: #fff5f5;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    order: 2;
+}
+
+.header-name {
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+}
+
+.header-title {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #37443f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    order: 1;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column, .right-column {
+    width: 100%;
+    padding: 20px;
+}
+
+.left-column {
+    background-color: #e8e8e8;
+    color: #333;
+}
+
+.right-column {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.divider {
+    display: none;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    color: #37443f;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #37443f;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.contact-icon {
+    margin-left: 10px;
+    color: #37443f;
+    font-size: 1.2rem;
+}
+
+.contact-text {
+    font-size: 0.9rem;
+}
+
+.education-item, .skill-item {
+    margin-bottom: 15px;
+}
+
+.education-title {
+    font-size: 1.1rem;
+    color: #37443f;
+    margin-bottom: 5px;
+}
+
+.education-detail {
+    font-size: 0.8rem;
+    margin-right: 25px;
+}
+
+.skills-container {
+    margin-top: 20px;
+}
+
+.skill-category {
+    font-size: 1rem;
+    color: #37443f;
+    margin: 10px 0 5px 0;
+}
+
+.skill-list {
+    font-size: 0.9rem;
+    margin-right: 25px;
+    line-height: 1.6;
+}
+
+/* برای دسکتاپ و تبلت */
+@media (min-width: 768px) {
+    .resume-container {
+        width: 80%;
+        margin: 2.5% auto;
+    }
+    
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 25%;
+        min-height: auto;
+        padding: 0 20px;
+        text-align: right;
+    }
+    
+    .header-content {
+        width: 70%;
+        text-align: right;
+        padding-right: 20px;
+        order: 1;
+    }
+    
+    .profile-image {
+        order: 2;
+        margin-bottom: 0;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .main-content {
+        flex-direction: row;
+    }
+    
+    .left-column {
+        width: 40%;
+    }
+    
+    .right-column {
+        width: 60%;
+    }
+    
+    .divider {
+        display: block;
+        width: 1px;
+        background-color: #37443f;
+    }
+    
+    .contact-item {
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1100px) {
+    .resume-container {
+        width: 50%;
+    }
+}
